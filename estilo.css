@@ -1,7 +1,7 @@
-/* 1. Fuente Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* 2. Variables de color */
+
 :root {
   --blanco: #ffffff;
   --gris-oscuro: #2e2e2e;
@@ -11,14 +11,14 @@
   --color-acento: #0077cc;
 }
 
-/* 3. Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 4. Cuerpo */
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--blanco);
@@ -27,7 +27,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* 5. Navegación */
+
 nav {
   width: 100%;
   padding: 20px 50px;
@@ -52,7 +52,7 @@ nav a:hover {
   color: var(--color-acento);
 }
 
-/* 6. Header tipo Czar */
+
 header {
   background-color: var(--blanco);
 }
@@ -100,7 +100,7 @@ header {
   box-shadow: none;
 }
 
-/* 7. Secciones */
+
 section {
   padding: 100px 20px;
 }
@@ -137,7 +137,7 @@ li {
   text-align: left;
 }
 
-/* 8. Secciones oscuras */
+
 #perfil,
 #experiencia,
 #idiomas {
@@ -152,7 +152,7 @@ li {
   color: var(--color-acento);
 }
 
-/* 9. Secciones claras */
+
 #habilidades,
 #certificaciones,
 #proyectos,
@@ -163,7 +163,7 @@ li {
   width: 100%;
 }
 
-/* 10. Footer */
+
 footer {
   background-color: var(--gris-footer);
   text-align: center;
@@ -172,7 +172,7 @@ footer {
   color: var(--blanco);
 }
 
-/* 11. Animación suave */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -186,7 +186,7 @@ footer {
   }
 }
 
-/* 12. Responsive */
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column-reverse;
