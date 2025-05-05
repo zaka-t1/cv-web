@@ -1,0 +1,219 @@
+/* 1. Fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. Variables de color */
+:root {
+  --blanco: #ffffff;
+  --gris-oscuro: #2e2e2e;
+  --gris-footer: #1f1f1f;
+  --texto-principal: #111111;
+  --texto-secundario: #cccccc;
+  --color-acento: #0077cc;
+}
+
+/* 3. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 4. Cuerpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--blanco);
+  color: var(--texto-principal);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* 5. Navegación */
+nav {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--blanco);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--texto-principal);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+/* 6. Header tipo Czar */
+header {
+  background-color: var(--blanco);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 60px 20px;
+  gap: 60px;
+}
+
+.header-texto {
+  flex: 1;
+}
+
+.header-texto h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header-texto p {
+  font-size: 1.1rem;
+  color: var(--texto-principal);
+  margin-bottom: 10px;
+}
+
+.header-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-foto img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  max-height: 480px;
+  filter: grayscale(100%);
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+}
+
+/* 7. Secciones */
+section {
+  padding: 100px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  line-height: 1.8;
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* 8. Secciones oscuras */
+#perfil,
+#experiencia,
+#idiomas {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  width: 100%;
+}
+
+#perfil a,
+#experiencia a,
+#idiomas a {
+  color: var(--color-acento);
+}
+
+/* 9. Secciones claras */
+#habilidades,
+#certificaciones,
+#proyectos,
+#cursos,
+#contacto {
+  background-color: var(--blanco);
+  color: var(--texto-principal);
+  width: 100%;
+}
+
+/* 10. Footer */
+footer {
+  background-color: var(--gris-footer);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: var(--blanco);
+}
+
+/* 11. Animación suave */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 12. Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .header-foto img {
+    margin-left: 0;
+    width: 90%;
+    max-height: 320px;
+  }
+
+  .header-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  section {
+    padding: 60px 10px;
+  }
+}
